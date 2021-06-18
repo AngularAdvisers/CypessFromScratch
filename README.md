@@ -42,7 +42,7 @@ Replace the e2e with a cypress open command in the scripts section of our packag
     ],
 ```
 
-### Modify tsconfig.base.json
+### Modify tsconfig.json
 
 Add "types": ["cypress"], to the tsconfig.json file.
 
