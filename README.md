@@ -89,16 +89,16 @@ Create the file initial-page.spec.ts in the cypress/integration folder and add t
 ```
 describe('initial-page', () => {
 
-  beforeEach(() => {
-    cy.visit("localhost:4200/");
-  })
-
-  it(`has title 'angular-advisors-mirage'`, () => {
-    cy.contains('angular-advisors-mirage');
-    cy.get('h1').should('contain', 'angular-advisors-mirage');
-    cy.title().should('eq', 'AngularAdvisorsMirage');
-  })
-
+    beforeEach(() => {
+      cy.visit("localhost:4200/");
+    })
+  
+    it(`has title 'cypress-from-scratch'`, () => {
+      cy.contains('cypress-from-scratch');
+      cy.get('h1').should('contain', 'cypress-from-scratch');
+      cy.title().should('eq', 'CypressFromScratch');
+    })
+  
 })
 ```
 
