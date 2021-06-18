@@ -1,5 +1,5 @@
-# CypessFromScratch
-Cypess from scratch
+# CypressFromScratch
+Cypress from scratch for Angular 12
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
