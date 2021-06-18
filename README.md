@@ -1,6 +1,9 @@
 # CypressFromScratch
 Cypress from scratch for Angular 12
 
+# [YouTube Video](https://youtu.be/Fd1W_afy83c)
+[![1_u8RQEZTRROU-ByHbqQyUUg](https://user-images.githubusercontent.com/54124010/122487737-2dc89c80-cf99-11eb-8f10-9c93c270c854.png)](https://youtu.be/Fd1W_afy83c)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
 ## Install Cypress End-to-End Testing framework
