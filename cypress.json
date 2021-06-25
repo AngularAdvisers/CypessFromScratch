@@ -1,1 +1,7 @@
-{}
+{
+    "chromeWebSecurity": false,
+    "env": {
+        "loginURL": "https://ed3-test.eldercounsel.com/login",
+        "homeURL": "https://ed3-test.eldercounsel.com/home"
+    }
+}
