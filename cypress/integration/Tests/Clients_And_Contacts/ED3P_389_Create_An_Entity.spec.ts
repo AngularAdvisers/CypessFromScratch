@@ -15,7 +15,7 @@ describe('Create a Contact', function() {
             this.credentials = credentials;
         })
 
-        cy.fixture('Test_Data/Clients_And_Contacts/ED3P_386_Data')
+        cy.fixture('Test_Data/Clients_And_Contacts/ED3P_389_Data')
         .then(data => {
             this.data = data;
         })
@@ -43,24 +43,22 @@ describe('Create a Contact', function() {
         cy.wait(2000)
     }) 
 
-    it('Create Person', function() {
-        client_contact.go_to_add_person()
-        client_contact.validate_add_person_page_is_displayed()
-        client_contact.enter_firstname(this.data.FIRST_NAME)
-        client_contact.enter_lastname(this.data.LAST_NAME)
-        client_contact.enter_gender(this.data.GENDER)
-        client_contact.enter_status(this.data.STATUS)
-        client_contact.add_phone(this.data.PHONE_TYPE, this.data.PHONE_NUMBER)
+    it('Create an Entity', function() {
+        client_contact.go_to_add_entity()
+        client_contact.validate_add_entity_page_is_displayed()
+        client_contact.enter_entity_type(this.data.ENTITY_TYPE)
+        client_contact.enter_full_entity_name(this.data.FULL_ENTITY_NAME)
+        client_contact.enter_short_entity_name(this.data.SHORT_ENTITY_NAME)
         client_contact.save_person()
     })
 
-    it('Deletion of Person created', function() {
-        client_contact.contact_more_options(this.data.FIRST_NAME)
+    it('Delete Entity created', function() {
+        client_contact.contact_more_options(this.data.FULL_ENTITY_NAME)
         client_contact.delete_contact()
         client_contact.confirm_delete()
     })
     
     it('Logout', function() {
-        home.logout()
+        //home.logout()
     })
   })

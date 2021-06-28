@@ -108,12 +108,12 @@ class LegalContactPage{
         save_btn.should('be.visible').click()
     }
 
-    more_options(){
-        const more_options = cy.get(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_BTN).contains(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_TEXT).last()
-        more_options.invoke('show')
+    contact_more_options(){
+        const contact_more_options = cy.get(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_BTN).contains(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_TEXT).last()
+        contact_more_options.invoke('show')
         cy.reload()
-        const more_options2 = cy.get(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_BTN).contains(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_TEXT).last()
-        more_options2.invoke('show').click()
+        const contact_more_options2 = cy.get(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_BTN).contains(this.legal_contact_locator.MORE_OPTIONS_FIRST_CONTACT_TEXT).last()
+        contact_more_options2.invoke('show').click()
     }
 
     delete_contact(){
