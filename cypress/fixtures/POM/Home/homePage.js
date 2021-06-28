@@ -1,5 +1,3 @@
-import LoginPage from "../Login/loginPage"
-
 class HomeLocators{
     HOME_MENU_BTN = '.active-nav-link > .mat-list-item-content'
     CLIENTS_CONTACS_MENU_BTN = ':nth-child(2) > .mat-list-item-content'

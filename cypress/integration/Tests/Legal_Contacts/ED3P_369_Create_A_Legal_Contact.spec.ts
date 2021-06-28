@@ -60,7 +60,7 @@ describe('Create a Legal Contact', function() {
     })
 
     it('Deletion of Legal Contact created', function() {
-        legalContact.more_options()
+        legalContact.contact_more_options()
         legalContact.delete_contact()
         legalContact.confirm_delete()
     })
