@@ -52,6 +52,11 @@ class HomePage{
         const clients_and_contacts = cy.get(this.home_locator.CLIENTS_CONTACS_MENU_BTN).should('be.visible')
         clients_and_contacts.click()
     }
+
+    go_to_admin_page(){
+        const admin_page = cy.get(this.home_locator.ADMIN_MENU_BTN).should('be.visible')
+        admin_page.click()
+    }
 }
 
 export default HomePage
